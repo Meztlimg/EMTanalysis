@@ -1,0 +1,114 @@
+Reaction,abbreviation,pathway,KEGG_reaction,KEGG_enzyme,Keq
+13dpg <=> 23dpg,BPGM,Glycolysis,R01662,"5.4.2.4, 5.4.2.11",7300000
+23dpg  -> 3pg + pi,BPGM,Glycolysis,R01516,3.1.3.13,
+2pg  <=> pep ,ENO,Glycolysis,R00658,4.2.1.11,5.19
+fdp  <=> dhap + g3p ,FBA,Glycolysis,R01068,4.1.2.13,0.00024
+g3p + nad + pi  <=> 13dpg + nadh ,GAPDH,Glycolysis,R01061,"1.2.1.12, 1.2.1.59",0.17
+atp + f6p  -> adp + fdp,PFK,Glycolysis,R00756,2.7.1.11,
+g6p  <=> f6p ,PGI,Glycolysis,R00771,5.3.1.9,0.362
+13dpg -> pi + 3pg,ACYP,Glycolysis,R01515,3.6.1.7,
+3pg + atp <=> 13dpg + adp ,PGK,Glycolysis,R01512,2.7.2.3,0.00054
+2pg  <=> 3pg ,PGM,Glycolysis,R01518,"5.4.2.11, 5.4.2.12",
+g1p  <=> g6p ,PGMT,Glycolysis,R08639,"5.4.2.2, 5.4.2.5",19.9
+adp + pep -> atp + pyr ,PYK,Glycolysis,R00200,2.7.1.40,
+dhap  <=> g3p ,TPI,Glycolysis,R01015,5.3.1.1,9.3
+nad + lac-L <=> nadh + pyr,LDH,Glycolysis,R00703,1.1.1.27,3.80E-05
+g6p + nadp  <=> 6pgl + nadph ,G6PD,Pentose phosphate,R00835,"1.1.1.49, 1.1.1.363",
+nadp + 6pgc <=> nadph + ru5p-D,PGD,Pentose phosphate,R01528,"1.1.1.44, 1.1.1.351",0.0117
+6pgl  -> 6pgc ,PGL,Pentose phosphate,R02035,3.1.1.31,
+r1p  <=> r5p ,PPM,Pentose phosphate,R01057,"5.4.2.2, 5.4.2.7",111
+atp + r5p  <=> amp + prpp ,PRPS,Pentose phosphate,R01049,2.7.6.1,2.81
+ru5p-D  <=> xu5p-D ,RPE,Pentose phosphate,R01529,5.1.3.1,3.91
+r5p  <=> ru5p-D ,RPI,Pentose phosphate,R01056,5.3.1.6,0.444
+g3p + s7p  <=> f6p + e4p ,TALDO,Pentose phosphate,R08575,2.2.1.2,1.34
+r5p + xu5p-D  <=> g3p + s7p ,TKT,Pentose phosphate,R01641,2.2.1.1,4.64
+xu5p-D + e4p  <=> f6p + g3p ,TKT,Pentose phosphate,R01067,2.2.1.1,58.8
+cit  <=> icit ,ACO,TCA cycle,R01324,4.2.1.3,0.0458
+oaa + accoa -> cit ,Csm,TCA cycle,R00351,"2.3.3.1, 2.3.3.3, 2.3.3.16, 1.2.4.1, 1.8.1.4, 2.3.1.12",
+fum  <=> mal-L ,FH,TCA cycle,R01082,4.2.1.2,0.249
+nad + icit  <=> nadh + akg,ICDH3,TCA cycle,R00709,"1.1.1.41, 1.1.1.286",0.106
+icit + nadp  <=> akg + nadph,ICDH1,TCA cycle,R00267,1.1.1.42,0.0823
+nad + mal-L  <=> nadh + oaa,MDH,TCA cycle,R00342,"1.1.1.37, 1.1.1.299",1.20E-05
+succ  <=> fum,SDH,TCA cycle,R02164,"1.3.5.1, 1.3.5.4",6100
+succ + atp + nadh <=> akg + nad + adp + pi,SUCL+OGDH,TCA cycle,R00405,"6.2.1.4, 1.2.4.2, 1.8.1.4, 2.3.1.61",
+succ + gtp + nadh <=> akg + nad + gdp + pi,SUCL+OGDH,TCA cycle,R00432,"6.2.1.5, 1.2.4.2, 1.8.1.4, 2.3.1.61",
+mal-L + nad <=> pyr + nadh,ME1,TCA cycle,R00214,1.1.1.38,0.0052
+mal-L + nadp <=> pyr + nadph,ME2,TCA cycle,R00216,1.1.1.40,0.0041
+oaa + gtp <=> pep + gdp,PCK,TCA cycle,R00431,4.1.1.32,0.0048
+pyr + atp -> oaa + adp + pi ,PC,TCA cycle,R00344,6.4.1.1,
+glu + nad <=> akg + nadh,GLUDx,TCA cycle,R00243,1.4.1.3,6.40E-07
+glu + nadp <=> akg + nadph,GLUDy,TCA cycle,R00248,1.4.1.3,5.00E-07
+pi + adp  -> atp ,HA,Oxidative Phosphorylation,R00086,3.6.3.14,
+nadh -> nad,ND,Oxidative Phosphorylation,R02163,1.6.5.3,
+2*gthrd -> gthox,GPX,Gluthatione metabolism,R00274,1.11.1.9,
+gthox + nadph -> 2*gthrd + nadp,GTHO,Gluthatione metabolism,R00115,1.8.1.7,
+ -> g1p,EX_g1p,Exchange,,,
+ <=> gln,EX_gln,Exchange,,,
+ <=> nadp ,EX_nadp,Exchange,,,
+ <=> nadph ,EX_nadph,Exchange,,,
+ -> adp,EX_adp,Exchange,,,
+ <=> amp ,EX_amp,Exchange,,,
+ nad -> ,EX_nad,Exchange,,,
+ -> nadh ,EX_nadh,Exchange,,,
+ <=> pi ,EX_pi,Exchange,,,
+ <=> gdp ,EX_gdp,Exchange,,,
+ <=> gtp ,EX_gtp,Exchange,,,
+ <=> gthrd,EX_gthrd,Exchange,,,
+atp ->,EX_atp,Exchange,,,
+lac-L <=>,EX_lac,Exchange,,,
+ <=> glc-D,EX_glc,Exchange,,,
+ <=> arg-L,EX_arg-L,Exchange,,,
+ <=> rbl-D,EX_rbl-D,Exchange,,,
+ <=> urea,EX_urea,Exchange,,,
+ <=> creat,EX_creat,Exchange,,,
+ <=> pro-L,EX_pro-L,Exchange,,,
+ <=> orn,EX_orn,Exchange,,,
+ <=> 4abut,EX_4abut,Exchange,,,
+ <=> cys-L,EX_cys-L,Exchange,,,
+ <=> acgam6p,EX_acgam6p,Exchange,,,
+ <=> glu,EX_glu,Exchange,,,
+atp + glc-D -> adp + g6p,HEX1,Glycolysis,R00299,2.7.1.1,
+nad + pyr -> nadh + accoa,PDH,Glycolysis,R00209,1.2.4.1,
+g6p -> glc-D + pi,G6PPer,Glycolysis,R00303,3.1.3.9,
+atp + rbl-D -> adp + ru5p-D,RBK_D,Pentose phosphate,,2.7.1.47,
+atp + rib-D <=> adp + r5p,RBK,Pentose phosphate,R01051,2.7.1.15,
+rib-D + nadh <=> rbt + nad,RBT,Pentose phosphate,,,
+atp + glyc-R -> 2pg + adp ,GLYCK2,Glycolysis,R08572,2.7.1.31,
+atp + glyc-R -> 3pg + adp,GLYPT,Aminoacid Metabolism,R01514,2.7.1.31,
+3pg + nad <=> 3php + nadh,PGCD,Aminoacid Metabolism,R01513,1.1.1.95,
+3php + glu -> akg + pser-L,PSERT,Aminoacid Metabolism,R04173,2.6.1.52,
+pser-L -> pi + ser-L,PSP_L,Aminoacid Metabolism,R00582,3.1.3.3,
+ser-L <=> gly ,GHMT2r,Aminoacid Metabolism,R00945,2.1.2.1,
+ser-L -> pyr,SERD_L,Aminoacid Metabolism,R00220,4.3.1.17,
+pyr + ser-L + nadph -> ala-L + glyc-R + nadp,SPTix +HPYRRy,Aminoacid Metabolism,R00585,2.6.1.51,
+arg-L + gly <=> gudac + orn,GLYAMDTRc,Aminoacid Metabolism,R00565,2.1.4.1,
+amet + gudac <=> ahcys + creat,GACMTRc,Aminoacid Metabolism,R01883,2.1.1.2,
+arg-L -> orn + urea,ARGN,Aminoacid Metabolism,R00551,3.5.3.1,
+akg + ala-L <=> glu + pyr,ALATA_L,Aminoacid Metabolism,R00258,2.6.1.2,
+akg + orn <=> glu + glu5sa,ORNTArm,Aminoacid Metabolism,R00667,2.6.1.13,
+nadh + glu <=> glu5sa + nad,G5SAor,Aminoacid Metabolism,R00245,1.5.1.12,
+nadph + atp + glu -> glu5sa + adp + nadp,GLU5Km+G5SDm,Aminoacid Metabolism,R03313,1.2.1.41,
+glu5sa + nadh -> pro-L + nad,P5CR,Aminoacid Metabolism,R01251,"1.5.1.12, 1.5.1.2",
+glu5sa + nadph -> pro-L + nadp,P5CRx,Aminoacid Metabolism,R01251,"1.5.1.12, 1.5.1.2",
+nad + pro-L -> glu5sa + nadh,PRO1x,Aminoacid Metabolism,R01248,1.5.1.2,
+arg-L -> agm,ARGDCm,Aminoacid Metabolism,R00566,4.1.1.19,
+orn -> ptrc,ORNDC,Aminoacid Metabolism,R00670,4.1.1.17,
+agm -> ptrc + urea,AGMTm,Aminoacid Metabolism,R01157,3.5.3.11,
+ptrc + nad -> 4abut + nadh,PTRCOX1+ABUTD,Aminoacid Metabolism,R01992,1.2.1.19,
+4abut + akg <=> glu + succ,ABTArm,Aminoacid Metabolism,,2.6.1.19,
+pro-L + nad + nadp + 2*akg -> succ + glu + pyr + nadh + nadph,POX+OTHER,Aminoacid Metabolism,R01252,,
+akg + asp-L <=> glu + oaa,ASPTA,Aminoacid Metabolism,R00355,2.6.1.1,
+asp-L -> fum,ASPFUM,Aminoacid Metabolism,,4.3.1.1,
+atp + glu -> adp + gln + pi,GLNS,Aminoacid Metabolism,R00253,6.3.1.2,
+gln -> glu,GLUNm,Aminoacid Metabolism,R00256,3.5.1.2,
+asp-L + atp + gln -> amp + asn-L + glu + ppi,ASNS1,Aminoacid Metabolism,R00578,6.3.5.4,
+5oxpro + atp -> adp + glu + pi,OPAHir,Gluthatione metabolism,R00251,3.5.2.9,
+atp + cys-L + glu -> adp + glucys + pi,GLUCYS,Gluthatione metabolism,R00894,6.3.2.2,
+atp + glucys + gly -> adp + gthrd + pi,GTHS,Gluthatione metabolism,R00497,6.3.2.3,
+glucys -> 5oxpro + cys-L,GLC5C,Gluthatione metabolism,R02743,2.3.2.4,
+gthrd -> cgly +glu,DESGTH,Gluthatione metabolism,R00494,2.3.2.2,
+cgly -> cys-L + gly,AMPTASECG,Gluthatione metabolism,R00899,3.4.11.1,
+gln + f6p -> glu + gam6p ,GF6PTA,Aminosugar metabolism,R00820,2.6.1.16,
+gam6p -> f6p,G6PDA,Aminosugar metabolism,R00765,3.5.99.6,
+accoa + gam6p -> acgam6p,ACGAM6PSi,Aminosugar metabolism,,2.3.1.4,
+acgam6p -> gam6p,AGDC,Aminosugar metabolism,R02059,3.5.1.25,
