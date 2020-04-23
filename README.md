@@ -13,5 +13,5 @@ Under these constraints, the feasible space of metabolic phenotypes before and a
 
 Combining these results with microarray analysis we were able to identify specific reactions that change in three different NSCLC cell lines with different genetic background.
 
-R code and results can be accessed in EMTanalysis.md archive
+R code and results can be accessed in [EMTanalysis.md](EMTanalysis.md) archive
 
